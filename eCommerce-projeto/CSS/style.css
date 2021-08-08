@@ -102,6 +102,7 @@ body{
 .box-minicart:hover .product-minicart{
     height: 500px;
     width: 300px;
+    background-color: #FFFFFF;
     border: 1px solid #ff497d;
     border-radius: 20px;
     transform: translateY(21px) translateX(-165px);
@@ -121,30 +122,107 @@ body{
 }
 
 .box-category{
+    height: 100%;
+    width: 103px;
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.box-category:hover{
+    background-color: #ff497d;
+}
+
+.menu{
+    max-height: 1000px;
+    flex-wrap: wrap;
 }
 
 .title-category{
     font-weight: 700;
 }
 
-.menu{
-    height: ;
+.submenu{
+    max-height: 500px;
+    min-width: 600px;
+    max-width: 1000px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     position: absolute;
-    /* display: none; */
+    padding: 20px 0 0 20px;
+    display: none;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-.box-category:hover .menu{
-    background-color: #ff497d;
-    border-radius: 5px;
+.box-category:hover .submenu{
+    background-color: #FFFFFF;
+    border: 1px solid #ff497d;
+    border-radius: 0 0 15px 15px;
+    color: #ff497d80;
+    display: flex;
+    transform: translateY(127px) translateX(249px);
 }
 
 .subcategory{
     font-weight: 700;
+    font-size: 25px;
+    margin: 0 60px 30px 0;
+    color: #ff497d;
+    text-decoration: underline;
+}
+
+.product-menu{
+    margin: 0 100px 30px 0;
+}
+
+.product-menu:hover{
+    text-decoration: underline;
+}
+
+.sub-category-menu{
+    display: flex;
+}
+
+.menu-top{
+    display: flex;
+}
+
+.box-product-list{
+    max-height: 500px;
+    flex-wrap: wrap;
+}
+
+.box-size-menu{
+    display: flex;
+}
+
+.button-age-price-menu{
+    height: 45px;
+    width: 150px;
+    margin: 0 60px 15px 0;
+    background-color: transparent;
+    border: 1px solid #ff497d80;
+    border-radius: 25px;
+    color: #ff497d80;
+    cursor: pointer;
+}
+
+.button-age-price-menu:hover{
+    background-color: #ff497d80;
+    color: #ffffff;
+}
+
+.button-size-menu{
+    height: 45px;
+    width: 45px;
+    border: 1px solid #ff497d80;
+    color: #ff497d80;
+    border-radius: 25px;
+    background-color: transparent;
+    margin: 0 10px 20px 0;
 }
